@@ -1,0 +1,43 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body background="background1.jpg">
+        <center>
+            <h1>AI PING PONG</h1>
+            <h4>Devolped By:Yuvraj Vallamsetla</h4>
+            <button class="btn btn-warning" data-toggle="modal" data-target="#myModal">Instructions</button>
+            <button class="btn btn-success" onclick="startGame()" id="start">Play Game</button>
+            <button class="btn btn-warning" id="status"></button>
+            <div id="canvas"></div>
+            <div id="myModal" class="modal fade">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <buttton class="close" data-dismiss="modal">&times;</buttton>
+                      <button onclick="restart()">Restart</button>
+                      <h4>Instructions</h4>
+                    </div>
+      
+                    <div class="modal-body">
+                        <h1>How to play AI PING PONG: One of the paddles will be moved by a compuuter but the other one must be operated by you. Moving your wrist up and down control how the paddle moves.</h1>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
